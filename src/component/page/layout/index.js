@@ -26,7 +26,7 @@ let Layout = () => {
                                 <Link className="nav-link" to={"/"}>Home</Link>
                             </Nav.Link>
                             <Nav.Link >
-                                <Link className="nav-link" to={"league"}>League</Link>
+                                <Link className="nav-link" to={"travel"}>Travel</Link>
                             </Nav.Link>
                         
                             <Form className="d-flex">

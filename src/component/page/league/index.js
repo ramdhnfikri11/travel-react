@@ -23,8 +23,8 @@ let League = () => {
     
     // add
     const [show, setShow] = useState(id);
-    const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
     // update
     const [show2, setShow2] = useState(false);
     const handleClose2 = () => setShow2(false);

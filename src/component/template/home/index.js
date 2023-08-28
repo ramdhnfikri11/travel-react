@@ -78,11 +78,11 @@ let Home = (props) =>{
                         A Simple Component 
                     </h3>
                     <p>React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via this.props.JSX is optional and not required to use React. Try the Babel REPL to see the raw JavaScript code produced by the JSX compilation step.</p>
-                    <Row>
+                    {/* <Row>
                         <Col xs={6} md={4}>
                         <Image src="https://www.freepik.com/free-photo/programming-background-collage_34089142.htm#query=java%20script&position=11&from_view=search&track=ais" rounded />
                         </Col>
-                    </Row>
+                    </Row> */}
                 </div>
                 <div className='component'>
                     <h3>

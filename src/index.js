@@ -9,7 +9,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './component/page/layout';
 import Home from './component/template/home';
-import League from './component/page/league';
+import Travel from './component/page/travel';
 import NotFound from './component/page/errorPage/404';
 
 
@@ -20,7 +20,7 @@ root.render(
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path='league' element={<League />} />
+            <Route path='travel' element={<Travel />} />
             <Route path='*' element={<NotFound />}></Route>
           </Route>
         </Routes>
