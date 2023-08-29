@@ -28,7 +28,13 @@ let Layout = () => {
                             <Nav.Link >
                                 <Link className="nav-link" to={"travel"}>Travel</Link>
                             </Nav.Link>
-                        
+                            <Nav.Link >
+                                <Link className="nav-link" to={"travelEmployee"}>Travel Emmployee</Link>
+                            </Nav.Link>
+                            <Nav.Link >
+                                <Link className="nav-link" to={"posttravel"}>Post Travel</Link>
+                            </Nav.Link>
+
                             <Form className="d-flex">
                             <Form.Control
                                 type="search"

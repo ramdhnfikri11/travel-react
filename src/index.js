@@ -11,6 +11,9 @@ import Layout from './component/page/layout';
 import Home from './component/template/home';
 import Travel from './component/page/travel';
 import NotFound from './component/page/errorPage/404';
+import TravelEmployee from './component/page/travelEmployee';
+import PostTravel from './component/page/posttravel';
+import Login from './component/page/login';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +24,9 @@ root.render(
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
             <Route path='travel' element={<Travel />} />
+            <Route path='travelEmployee' element={<TravelEmployee />} />
+            <Route path='posttravel' element={<PostTravel />} />
+            <Route path='login' element={<Login />} />
             <Route path='*' element={<NotFound />}></Route>
           </Route>
         </Routes>
