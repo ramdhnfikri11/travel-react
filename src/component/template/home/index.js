@@ -1,41 +1,19 @@
 
 import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
-
-import Container from 'react-bootstrap/Container';
-
-
-
+import Slider from '../../slider';
 
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./index.css";
 
+
 let Home = (props) =>{
+
     return(
         <>
-        {/* <div  className="header">
-            <label className="label-header"> 
-                {props.labelHeader}
-                <a href="https://react.dev/blog/2023/03/16/introducing-react-dev" className="label-goto">{props.labelGoto}</a>
-            </label>
-        </div> */}
-        
-
-        <Container mt-3>
-            <div className='jumbotron jumbotron-fluid p-5'>
-                <h1 className='mb-3'>React</h1>
-                <h4 className='mb-3'>A JavaScript library for building user interfaces</h4>
-                <a className='jumbotron-a-1' href='#' role='button'>
-                Get started
-                </a>
-                <a className='jumbotron-a-2' style={{color:"#61DAFB"}} href='#'>  Take the tutorial </a>
-            </div>
-
-            
+            <Slider
+             />
                 <div className='content'>
                     <Card className='card' style={{ width: '18rem' }}>
                         <Card.Body className='card-body'>
@@ -93,8 +71,7 @@ let Home = (props) =>{
                     <h3>
                         A Simple Component 
                     </h3>
-                </div>
-            </Container>    
+                </div>  
         </>
     )
 }

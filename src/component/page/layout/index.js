@@ -24,7 +24,7 @@ let Layout = () => {
           <CDBSidebarContent>
             <CDBSidebarMenu>
               <CDBSidebarMenuItem icon="th-large" style={{ height: '20px' }}>
-                <Link to="/">Home</Link>
+                <Link to="/dashboard">Dashboard</Link>
               </CDBSidebarMenuItem>
               <CDBSidebarMenu>
                 <CDBSidebarMenuItem icon="credit-card" iconType="solid">

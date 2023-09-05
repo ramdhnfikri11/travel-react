@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import store from './handler/store';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './component/page/login';
-import Layout from './component/page/layout';
 import Home from './component/template/home';
+import HomeLayout from './component/page/homeLayout';
+import Login from './component/page/login';
+
+import Dashboard from './component/page/dashboard';
+import Layout from './component/page/layout';
 import NotFound from './component/page/errorPage/404';
 
 import TravelEmployee from './component/page/travelEmployee';
@@ -24,19 +26,35 @@ import PosttravelHR from './component/page/posttravelHR';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Layout />}>
-            <Route index element={<Home />} />
+          <Route path='/dashboard' element={<Layout />}>
+            <Route index element={<Dashboard />} />
             <Route path='travelEmployee' element={<TravelEmployee />} />
             <Route path='travelManager' element={<TravelManager />} />
             <Route path='travelHR' element={<TravelHR />} />
             <Route path='posttravelEmployee' element={<PosttravelEmployee />} />
             <Route path='posttravelManager' element={<PosttravelManager />} />
             <Route path='posttravelHR' element={<PosttravelHR />} />
-            <Route path='login' element={<Login />} />
-            <Route path='*' element={<NotFound />}></Route>
           </Route>
+        </Routes>
+      </BrowserRouter> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<HomeLayout />}>
+            <Route index element={<Home />} />
+            <Route path='login' element={<Login />} />
+          </Route>
+          <Route path='/' element={<Layout />}>
+            <Route path='dashboard' element={<Dashboard />} />
+            <Route path='travelEmployee' element={<TravelEmployee />} />
+            <Route path='travelManager' element={<TravelManager />} />
+            <Route path='travelHR' element={<TravelHR />} />
+            <Route path='posttravelEmployee' element={<PosttravelEmployee />} />
+            <Route path='posttravelManager' element={<PosttravelManager />} />
+            <Route path='posttravelHR' element={<PosttravelHR />} />
+          </Route>
+          <Route path='*' element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>
   </Provider>

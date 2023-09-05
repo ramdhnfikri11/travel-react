@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 import Home from './component/page/home';
-import League from './component/page/league';
 import { decrement, increment } from './features/counter/counterSlice';
 
 

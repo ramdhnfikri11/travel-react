@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
+import { Navigate } from "react-router-dom";
 
 let Login = () => {
     const [status, setStatus] = useState(false);
@@ -31,6 +32,7 @@ let Login = () => {
                 setStatus(true)
                 console.log(response.data)
                 console.log(data)
+                return <Navigate to={"/dashboard"} />
             }
         }).catch((error) => {
             console.log(error)
@@ -64,7 +66,7 @@ let Login = () => {
                     <input type="text" id="email" value={email} onChange={e => setEmail(e.target.value)}></input>
                         
                     <label for="password"> password:</label>
-                    <input type="text" id="password" value={password} onChange={e => setPassword(e.target.value)} ></input>
+                    <input type="password" id="password" value={password} onChange={e => setPassword(e.target.value)} ></input>
                     <button onClick={onSubmit}>submit</button>
                 </Card>
 
