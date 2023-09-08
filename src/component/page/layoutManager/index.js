@@ -13,7 +13,8 @@ import {
 
 import { Link, Outlet } from 'react-router-dom';
 
-let Layout = () => {
+let LayoutManager 
+= () => {
   return (
     <>
       <div className="d-flex">
@@ -27,23 +28,11 @@ let Layout = () => {
                 <Link to="/dashboard">Dashboard</Link>
               </CDBSidebarMenuItem>
               <CDBSidebarMenu>
-                <CDBSidebarMenuItem icon="credit-card" iconType="solid">
-                  <Link to="travelEmployee">Travel Employee</Link>
-                </CDBSidebarMenuItem>
-                <CDBSidebarMenuItem icon="credit-card" iconType="solid">
-                  <Link to="posttravelEmployee">Post Travel</Link>
-                </CDBSidebarMenuItem>
-                <CDBSidebarMenuItem title="Travel" icon="table">
-                  <Link to="travelManager">Travel Manager</Link>
-                </CDBSidebarMenuItem>
-                <CDBSidebarMenuItem title="Change Update Travel" icon="table">
-                  <Link to="posttravelManager">Post-Travel Manager</Link>
-                </CDBSidebarMenuItem>
                 <CDBSidebarMenuItem title="Travel HR" icon="table">
-                  <Link to="travelHR">Travel HR</Link>
+                  <Link to="travelManager">Travel</Link>
                 </CDBSidebarMenuItem>
                 <CDBSidebarMenuItem title="Approval HR" icon="table">
-                  <Link to="posttravelHR">Post-Travel HR</Link>
+                  <Link to="posttravelManager">Post-Travel</Link>
                 </CDBSidebarMenuItem>
               </CDBSidebarMenu>
             </CDBSidebarMenu>
@@ -60,4 +49,4 @@ let Layout = () => {
   );
 };
 
-export default Layout;
+export default LayoutManager;
